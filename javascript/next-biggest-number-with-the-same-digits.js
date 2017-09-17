@@ -1,5 +1,9 @@
 /**
- * You have to create a function that takes a positive integer number and returns the next bigger number formed by the same digits
+ * You have to create a function that takes a positive integer number and returns the next bigger number formed by the same digits.
+ * This algorithm finds the pivot point `i` where n[i] < n[i+1] (searching from right to left),
+ * swaps that pivot value with the lowest value > n[i] in the subset n[i+1] - n[n.length-1],
+ * and then sorts n[i+1] - n[n.length-1] to its lowest value before rendering the resulting number.
+ * If the result is not greater than n, returns -1.
  * @param {number} n
  */
 function nextBigger(n) {
