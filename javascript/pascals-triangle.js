@@ -3,9 +3,7 @@
  * @param {number} n
  */
 function pascalsTriangle(n) {
-  return range(n).reduce((triangles, _, n) => {
-    return triangles.concat(calcRowPascalsTriangle(n))
-  }, [])
+  return range(n).reduce((triangles, _, n) => triangles.concat(calcRowPascalsTriangle(n)), [])
 }
 
 /**
